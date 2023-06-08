@@ -1,17 +1,46 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+    height: fit-content;
+    margin: auto;
+    padding: 50px 0;
 }
 
 h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+p, h1, h2 {
+    text-align: center;
+}
+
+ul {
+    margin: auto;
+    width: 400px;
 }
 
 img {
     width: 500px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 a {
     color: cornflowerblue;
+}
+
+.home, .next {
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
 }
     
