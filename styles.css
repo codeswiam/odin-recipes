@@ -4,25 +4,36 @@
 }
 
 body {
-    max-width: 600px;
-    height: fit-content;
-    margin: auto;
-    padding: 50px 0;
+    height: 100vh;
+    min-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0;
+    gap: 0px;
 }
 
 h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+}
+
+h1, h2 {
+    color: #457b9d;
+}
+
+.left-side > h1 {
+    color: #1d3557;
 }
 
 p, h1, h2 {
     text-align: center;
 }
 
-ul {
+/* ul {
     margin: auto;
     width: 400px;
-}
+} */
 
 img {
     width: 500px;
@@ -33,14 +44,105 @@ img {
 
 a {
     color: cornflowerblue;
+    text-decoration: none;
+    color: #f1faee;
 }
 
-.home, .next {
-    background-color: cornflowerblue;
-    color: white;
-    text-align: center;
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    gap: 10px;
+}
+
+.header, .footer {
+    background-color: #1d3557;
+}
+
+.logo {
+    flex-grow: 2;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header > ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 4;
+}
+
+.middle {
+    flex-grow: 1;
+    display: flex;
+    background-color: #f1faee;
+    gap: 10px;
+}
+
+.recipe {
+    flex-grow: 1;
+    flex-basis: 0px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe > img {
+    width: 70%;
+    height: auto;
+}
+
+.recipe > p {
+    padding: 0 5px;
+}
+
+button {
+    background-color: #457b9d;
+    border: 1px solid #1d3557;
     padding: 10px;
     border-radius: 5px;
-    display: inline-block;
 }
-    
+
+.right-side {
+    flex-grow: 3;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left-side {
+    flex-grow: 2;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 10px;  
+}
+
+.ingredients, .steps {
+    line-height: 25px;
+}
+
+.left-side > img {
+    width: 50%;
+    min-width: 270px;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.footer > p {
+    color:#0b1522; 
+}
